@@ -328,6 +328,7 @@ namespace RemoteTech
             }
             else
             {
+                cmd.TimeStamp -= mFlightComputer.Delay;
                 mFlightComputer.Enqueue(cmd, false, false, true);
             }
         }
